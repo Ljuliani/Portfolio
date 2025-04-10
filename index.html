@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+<div class="wrapper">
+<header>
+  <nav class="navbar">
+   <div class="brand">
+    <h2 class="NombreTitulo">J<span>L</span></h2>
+   </div>
+   <ul class="menu">
+    <li><a href="#about-me">About me</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact-section">Contact</a></li>
+   </ul>
+  </nav>
+</header>
+
+
+<main class="main">
+  <div class="info-contenet">
+    <div class="text-content">
+      <h1 class="NombrePresentacion">I'm <span>Luciano </span>Juliani</h1>
+        <p>  student in isfd114, in the career of analyst of system</p>
+        <a download href="https://docs.google.com/document/d/1euBFtb0vtAOd3bMJmwIQDALte_HFu2Z2vkhJBYXYyQ4/edit?tab=t.0"target="_blank">
+
+            <button class="download-cv"download="">Download CV</button>
+        </a>
+    </div>
+    <img src="./Imagenes/Imagen de WhatsApp 2025-04-08 a las 11.40.44_58a6556a.jpg" alt="">
+</main>
+</div>
+
+<div class="about" id="about-me">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hSHEiSQlLmw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="content">
+    <h2>About me</h2>
+    <div class="divider"></div>
+    <p class="transparent-bg">
+Hello everyone, some info about me, i like play video games, mechanic, electronic, i'm a enthusiast of PC.
+Proactive, i like learning new things and forms to work.
+I have BFF on this career, and we're together since the kindergarten</p>
+    <img src="" alt="">
+    <a download href="#">
+      <button class="download-cv"download="">Home</button>
+  </a>
+  </div>
+</div>
+
+
+<div class="portfolio" id="portfolio">
+  <div class="portfolio-headings">
+      <h2>My Portfolio</h2>
+      <div class="divider"></div>
+  </div>
+  <div class="container">
+      <div class="card">
+          <div class="card_img">
+          </div>
+          <div class="card_title">
+              <h2>Project Descriptions</h2>
+              <p>These are my projects on the career</p>
+          </div>
+          <div class="projects-links">
+              <a href="https://github.com/Ljuliani?tab=repositories" target="_blank">
+                  <i class="fab fa-github"></i>
+              </a>
+          </div>
+            </button>
+          </div>
+</div>
+
+<div class="contact-section" id="contact-section">
+  <div class="contact-headings">
+      <h2>Contact</h2>
+      <div class="divider"></div>
+  </div>
+  <div class="container-contact">
+    <div class="contact-form">
+      <h4>Contact Me</h4>
+      <form class="form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email"  placeholder="About">
+        <textarea id= "message" placeholder="Writte a massage"></textarea>
+          <button type="button" class="btn-submit" onclick="sendEmail()">
+            Send a message
+          </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function sendEmail() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const mailtoLink = `mailto:maxlucho1@gmail.com?subject=About ${name}&body=Name: ${email}%0A%0A${message}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+
+</body>
+</html>

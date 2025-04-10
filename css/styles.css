@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+body /*Fuente de letra*/
+ {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+ }
+
+ html
+ {
+   scroll-behavior: smooth;
+ }
+ .wrapper  /*Fondo*/
+ {
+  width: 100vw;
+  height: 100vh;
+  background-color:#191c32;
+  background-image: url("../Imagenes/R.jpeg");
+  background-size: cover;
+  color: floralwhite;
+  display: flex; /* Esto hace que el contenido principal use flexbox */
+  flex-direction: column; /* Ordena los elementos en columnas (puedes ajustar si necesario) */
+ }
+
+
+
+ .menu li /*Saca estilo de opciones del menu en parte superior*/
+ {
+  list-style:none;
+ }
+
+
+
+ .menu a /*Modifica las letras del menu*/
+ {
+  color:floralwhite;
+  text-decoration:none;
+  padding: 10px 20px;
+ }
+
+
+
+ .menu /*Modifica las letras del menu*/
+ {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+ }
+
+
+
+
+
+
+ .menu a:hover
+ {
+  background-color: red;
+  color:white;
+  transition: ease-in 0.3s;
+ }
+
+
+
+ .brand span
+ {
+ color:brown;
+ }
+
+
+ .navbar
+ {
+  display: Flex;
+  justify-content: space-between;
+  padding: 2em;
+ }
+
+
+ .brand
+ {
+  margin-top: -7px;
+ }
+
+
+ .main
+ {
+  margin: 0 auto;
+  width: 50vw;
+  height: 80vw;
+  display: grid;
+  grid-template: repeat(2,1fr);
+  align-items: center;
+  gap:2m;
+
+ }
+
+ .text-content 
+ {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra todo el contenido en este contenedor */
+  text-align: center;
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+
+
+ h1
+ {
+  font-size: 3em
+ }
+
+
+
+span
+{
+  color:brown;
+}
+
+.download-cv 
+{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: wheat;
+  margin-top: 10px;
+  cursor: pointer;
+  color:black;
+}
+
+
+.download-cv:hover
+{
+  background-color:red;
+}
+
+
+.info-contenet 
+{
+  display: flex; /* Esto es muy útil*/
+}
+
+
+.info-contenet 
+{
+    display: flex; /* Activa flexbox para alinear horizontalmente */
+    justify-content: space-between; /* La imagen a la derecha y el texto a la izquierda */
+    align-items: flex-start; /* Alinea el contenido arriba */
+}
+
+.text-content 
+{
+    display: flex; /* Activa flexbox solo para el texto */
+    flex-direction: column; /* Coloca el texto en una columna */
+    gap: 10px; /* Espacio entre elementos (título, párrafo, botón) */
+}
+
+.info-contenet img 
+{
+    max-width: 300px;
+    height: auto;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.main img {
+  border: 2px solid blue;
+  width: 600px;
+  height: 400px;
+  z-index: 1;
+}
+.main p
+{
+
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  padding: 10px; /* Espaciado para que el fondo cubra bien el texto */
+  display: inline-block; /* Para que el fondo solo ocupe el espacio del texto */
+  color: white; /* Color del texto para mejor visibilidad */
+}
+
+.NombrePresentacion
+{
+  color: green; /* Cambia el color a naranja vibrante (o el que prefieras) */
+  text-align: center; /* Asegura que esté centrado si es necesario */
+}
+.NombreTitulo
+{
+  Color:Green;
+}
+
+.about-container 
+{
+  display: grid;
+  place-items: center; /* Centra horizontal y verticalmente */
+  height: 100vh; /* Ajusta el contenedor para que ocupe toda la altura de la ventana */
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  background-image: url("../Imagenes/company-of-heroes-3-hammer-shield-expansion-pack-pc-juego-steam-europe-wallpaper-3.jpg");
+}
+
+.about video {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.content {
+  grid-column: 5/10;
+  text-align: center; /* Centra el texto horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos hijos, incluido el título */
+  gap: 10px;
+}
+.about-info
+{
+  grid-column: 5/10;
+  padding: 2em; 
+}
+
+.about-info h2
+{
+  font-size: 2em;
+  color:white;
+  
+}
+.transparent-bg 
+{
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  padding: 10px; /* Espaciado para que el fondo cubra bien el texto */
+  display: inline-block; /* Para que el fondo solo ocupe el espacio del texto */
+  color: white; /* Color del texto para mejor visibilidad */
+}
+
+
+.portfolio {
+  width: 100vw;
+  height: 40vh;
+  background-color: black;
+  color: #fff;
+  background-image: url('../Imagenes/united-states-and-argentina-flags-together-seamless-looping-background-looped-bump-texture-cloth-waving-slow-motion-3d-rendering-free-vide.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* portfolio cambio de tamaño de letra y un poco mas centrado*/
+.portfolio-headings
+{
+  width: 100vw;
+  padding: 5em;
+}
+
+.portfolio-headings h2 
+{
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  padding: 10px;
+  display: inline-block;
+}
+/* Portfolio parte de proyectos esto lo centra*/
+.portfolio .container 
+{
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  grid-column: 6/11;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+}
+
+.portfolio .container 
+{
+  width: 100vw;
+  background-image: url('../Imagenes/wp3228279.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.card 
+{
+  width: 450px;
+  height: 650px;
+  background-color: #1c2833;
+}
+/* ponemos el tamaño de la foto y el url, sin el cover solo mostraria un pedazo de la foto por el poco espacio que asigne */
+.card_img {
+  width: 450px;
+  height: 450px;
+  background-image: url('../Imagenes/OIP.jpg');
+  background-size: cover;
+ 
+  
+}
+
+.card_title 
+{
+  padding: 20px; 
+}
+
+
+.projects-links 
+{
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+
+}
+
+.projects-links a 
+{
+  color:#fff;
+  text-decoration: none;
+}
+
+.projects-links i 
+{
+  font-size: 4em;
+  
+}
+
+
+.contact-section 
+{
+  width: 200vw;
+  background-color: #b5bada;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-headings 
+{
+  background-color: blue;
+}
+
+.contact-headings h2 
+{
+  font-size: 3em;
+}
+
+.container-contact 
+{
+  padding: 3em;
+  margin: 0 auto;
+
+}
