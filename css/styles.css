@@ -6,7 +6,7 @@
   box-sizing: border-box;
  }
 
-body /*Fuente de letra*/
+body 
  {
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
@@ -16,7 +16,7 @@ body /*Fuente de letra*/
  {
    scroll-behavior: smooth;
  }
- .wrapper  /*Fondo*/
+ .wrapper  
  {
   width: 100vw;
   height: 100vh;
@@ -24,20 +24,20 @@ body /*Fuente de letra*/
   background-image: url("../Imagenes/R.jpeg");
   background-size: cover;
   color: floralwhite;
-  display: flex; /* Esto hace que el contenido principal use flexbox */
-  flex-direction: column; /* Ordena los elementos en columnas (puedes ajustar si necesario) */
+  display: flex; 
+  flex-direction: column; 
  }
 
 
 
- .menu li /*Saca estilo de opciones del menu en parte superior*/
+ .menu li 
  {
   list-style:none;
  }
 
 
 
- .menu a /*Modifica las letras del menu*/
+ .menu a 
  {
   color:floralwhite;
   text-decoration:none;
@@ -46,7 +46,7 @@ body /*Fuente de letra*/
 
 
 
- .menu /*Modifica las letras del menu*/
+ .menu 
  {
   display: flex;
   width: 30%;
@@ -103,9 +103,9 @@ body /*Fuente de letra*/
  {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra todo el contenido en este contenedor */
+  align-items: center; 
   text-align: center;
-  gap: 10px; /* Espacio entre los elementos */
+  gap: 10px; 
 }
 
 
@@ -142,29 +142,29 @@ span
 
 .info-contenet 
 {
-  display: flex; /* Esto es muy útil*/
+  display: flex; 
 }
 
 
 .info-contenet 
 {
-    display: flex; /* Activa flexbox para alinear horizontalmente */
-    justify-content: space-between; /* La imagen a la derecha y el texto a la izquierda */
-    align-items: flex-start; /* Alinea el contenido arriba */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
 }
 
 .text-content 
 {
-    display: flex; /* Activa flexbox solo para el texto */
-    flex-direction: column; /* Coloca el texto en una columna */
-    gap: 10px; /* Espacio entre elementos (título, párrafo, botón) */
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .info-contenet img 
 {
     max-width: 300px;
     height: auto;
-    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 20px;
 }
 
 .main img {
@@ -176,16 +176,16 @@ span
 .main p
 {
 
-  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
-  padding: 10px; /* Espaciado para que el fondo cubra bien el texto */
-  display: inline-block; /* Para que el fondo solo ocupe el espacio del texto */
-  color: white; /* Color del texto para mejor visibilidad */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  display: inline-block;
+  color: white;
 }
 
 .NombrePresentacion
 {
-  color: green; /* Cambia el color a naranja vibrante (o el que prefieras) */
-  text-align: center; /* Asegura que esté centrado si es necesario */
+  color: green; 
+  text-align: center;
 }
 .NombreTitulo
 {
@@ -195,8 +195,8 @@ span
 .about-container 
 {
   display: grid;
-  place-items: center; /* Centra horizontal y verticalmente */
-  height: 100vh; /* Ajusta el contenedor para que ocupe toda la altura de la ventana */
+  place-items: center; 
+  height: 100vh;
 }
 
 .about {
@@ -215,10 +215,10 @@ span
 
 .content {
   grid-column: 5/10;
-  text-align: center; /* Centra el texto horizontalmente */
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra los elementos hijos, incluido el título */
+  align-items: center;
   gap: 10px;
 }
 .about-info
@@ -235,10 +235,10 @@ span
 }
 .transparent-bg 
 {
-  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
-  padding: 10px; /* Espaciado para que el fondo cubra bien el texto */
-  display: inline-block; /* Para que el fondo solo ocupe el espacio del texto */
-  color: white; /* Color del texto para mejor visibilidad */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px; 
+  display: inline-block; 
+  color: white; 
 }
 
 
@@ -252,7 +252,7 @@ span
   background-position: center;
 }
 
-/* portfolio cambio de tamaño de letra y un poco mas centrado*/
+
 .portfolio-headings
 {
   width: 100vw;
@@ -262,11 +262,11 @@ span
 .portfolio-headings h2 
 {
   font-size: 3em;
-  background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de transparencia */
+  background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px;
   display: inline-block;
 }
-/* Portfolio parte de proyectos esto lo centra*/
+
 .portfolio .container 
 {
   width: 80vw;
@@ -296,7 +296,7 @@ span
   height: 650px;
   background-color: #1c2833;
 }
-/* ponemos el tamaño de la foto y el url, sin el cover solo mostraria un pedazo de la foto por el poco espacio que asigne */
+
 .card_img {
   width: 450px;
   height: 450px;
@@ -333,12 +333,14 @@ span
 }
 
 
-.contact-section 
+.contact-section
 {
-  width: 200vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 100vh;
   background-color: #b5bada;
-  align-items: center;
-  flex-direction: column;
+  
 }
 .contact-headings 
 {
@@ -350,9 +352,14 @@ span
   font-size: 3em;
 }
 
-.container-contact 
+.container-contact
 {
   padding: 3em;
   margin: 0 auto;
-
+  width: 450px;
+  height: 650px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  
 }
