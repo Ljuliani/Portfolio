@@ -1,406 +1,127 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); 
-* 
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
+/* index Section */
+#index-section {
+    background-image: url('../Imagenes/R.jpeg');
+    background-color: #1b1f2e;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+} 
 
-body 
- {
-  font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
- }
-
- html
- {
-   scroll-behavior: smooth;
- }
- .wrapper  
- {
-  width: 100vw;
-  height: 100vh;
-  background-color:#191c32;
-  background-image: url("../Imagenes/R.jpeg");
-  background-size: cover;
-  color: floralwhite;
-  display: flex; 
-  flex-direction: column; 
- }
-
-
-
- .menu li 
- {
-  list-style:none;
- }
-
-
-
- .menu a 
- {
-  color:floralwhite;
-  text-decoration:none;
-  padding: 10px 20px;
- }
-
-
-
- .menu 
- {
-  display: flex;
-  width: 30%;
-  justify-content: space-around;
- }
-
-
-
-
-
-
- .menu a:hover
- {
-  background-color: red;
-  color:white;
-  transition: ease-in 0.3s;
- }
-
-
-
- .brand span
- {
- color:brown;
- }
-
-
- .navbar
- {
-  display: Flex;
-  justify-content: space-between;
-  padding: 2em;
- }
-
-
- .brand
- {
-  margin-top: -7px;
- }
-
-
- .main
- {
-  margin: 0 auto;
-  width: 50vw;
-  height: 80vw;
-  display: grid;
-  grid-template: repeat(2,1fr);
-  align-items: center;
-  gap:2m;
-
- }
-
- .text-content 
- {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  text-align: center;
-  gap: 10px; 
-}
-
-
-
- h1
- {
-  font-size: 3em
- }
-
-
-
-span
-{
-  color:brown;
-}
-
-.download-cv 
-{
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  background-color: wheat;
-  margin-top: 10px;
-  cursor: pointer;
-  color:black;
-}
-
-
-.download-cv:hover
-{
-  background-color:red;
-}
-
-
-.info-contenet 
-{
-  display: flex; 
-}
-
-
-.info-contenet 
-{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: flex-start; 
-}
-
-.text-content 
-{
-    display: flex; 
-    flex-direction: column; 
-    gap: 10px; 
-}
-
-.info-contenet img 
-{
-    max-width: 300px;
-    height: auto;
-    margin-left: 20px;
-}
-
-.main img {
-  border: 2px solid blue;
-  width: 600px;
-  height: 400px;
-  z-index: 1;
-}
-.main p
-{
-
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px; 
-  display: inline-block;
-  color: white;
-}
-
-.NombrePresentacion
-{
-  color: green; 
-  text-align: center;
-}
-.NombreTitulo
-{
-  Color:Green;
-}
-
-.about-container 
-{
-  display: grid;
-  place-items: center; 
-  height: 100vh;
-}
-
-.about {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  width: 100%;
-  align-items: center;
-  gap: 10px;
-  background-image: url("../Imagenes/company-of-heroes-3-hammer-shield-expansion-pack-pc-juego-steam-europe-wallpaper-3.jpg");
-}
-
-.about video {
-  width: 100%;
-  grid-column: 1/5;
-}
-
-.content {
-  grid-column: 5/10;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-.about-info
-{
-  grid-column: 5/10;
-  padding: 2em; 
-}
-
-.about-info h2
-{
-  font-size: 2em;
-  color:white;
-  
-}
-.transparent-bg 
-{
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px; 
-  display: inline-block; 
-  color: white; 
-}
-
-
-.portfolio {
-  width: 100vw;
-  height: 40vh;
-  background-color: black;
-  color: #fff;
-  background-image: url('../Imagenes/united-states-and-argentina-flags-together-seamless-looping-background-looped-bump-texture-cloth-waving-slow-motion-3d-rendering-free-vide.jpg');
+#about-me {
+  background-image: url('../Imagenes/wp3228279.jpg');
   background-size: cover;
   background-position: center;
-}
-
-
-.portfolio-headings
-{
-  width: 100vw;
-  padding: 5em;
-}
-
-.portfolio-headings h2 
-{
-  font-size: 3em;
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px;
-  display: inline-block;
-}
-
-.portfolio .container 
-{
-  width: 80vw;
-  height: 80vh;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-  grid-column: 6/11;
-  text-align: center; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 10px;
-}
-
-.portfolio .container 
-{
-  width: 100vw;
-  background-image: url('../Imagenes/wp3228279.jpg');
-  background-size: auto;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
 }
 
-.card 
-{
-  width: 450px;
-  height: 650px;
-  background-color: #1c2833;
+
+h1 span.text-warning {
+  text-shadow: 2px 2px 4px black;
+  font-weight: bold;
 }
 
-.card_img {
-  width: 450px;
-  height: 450px;
-  background-image: url('../Imagenes/OIP.jpg');
+
+/* About Me */
+h2.text-success {
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px black;
+    letter-spacing: 1px;
+}
+
+p.bg-dark {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Portfolio */
+#portfolio {
+    background-image: url('../Imagenes/OIP.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 80px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+    #portfolio::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 0;
+    }
+
+    #portfolio .container {
+        position: relative;
+        z-index: 2;
+    }
+#portfolio h2 {
+  text-shadow: 2px 2px 4px black;
+  font-size: 2.5rem;
+}
+
+.card-body img {
+  filter: drop-shadow(0 0 5px #ffc107);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: #ffc107;
+}
+
+.btn-warning {
+  border-radius: 25px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-warning:hover {
+  transform: scale(1.05);
+  background-color: #ffcc00;
+}
+
+#contact-section {
+  background: radial-gradient(circle at top left, #282c34, #111);
+  color: white;
+  padding: 80px 20px;
+  text-shadow: 2px 2px 4px black;
+  background-image: url('../Imagenes/Obelisco.jpg');
+  background-color: #1b1f2e;
   background-size: cover;
- 
-  
-}
-
-.card_title 
-{
-  padding: 20px; 
-}
-
-
-.projects-links 
-{
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 80px 20px;
   display: flex;
-  align-content: center;
-  flex-direction: column;
-
-}
-
-.projects-links a 
-{
-  color:#fff;
-  text-decoration: none;
-}
-
-.projects-links i 
-{
-  font-size: 4em;
+  align-items: center;
   
 }
-
-
-.contact-section
-{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  height: 100vh;
-  background-color: #b5bada;
-  
-}
-.contact-headings 
-{
-  background-color: blue;
+form input.form-control,
+form textarea.form-control {
+  background-color: rgba(0, 0, 0, 0.6); /* fondo oscuro translúcido */
+  color: #FFD700; /* dorado brillante para texto */
+  border: 2px solid #FFD700; /* borde dorado */
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* resplandor dorado */
 }
 
-.contact-headings h2 
-{
-  font-size: 3em;
+form input.form-control::placeholder,
+form textarea.form-control::placeholder {
+  color: #f5d76e; /* placeholder dorado suave */
+  opacity: 0.8;
 }
 
-.container-contact
-{
-  padding: 3em;
-  margin: 0 auto;
-  width: 450px;
-  height: 650px;
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
-  
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  width:30vw;
-  margin-top: 2em;
-}
-
-.form input {
-  padding: 10px 20px;
-  margin-bottom: 1em;
-  background: rgb(240, 235, 235);
-  border: black;
-  border-radius: 5px;
-  border-color: black;
-  border-bottom: 1px solid #fff;
-  color: black;
-}
-
-.form textarea {
-  height: 150px;
-  background: rgb(240, 235, 235);
-  border-radius: 5px;
-  color: black;
-  padding: 1.5em;
-  border: 1px solid #fff;
-}
-
-.btn-submit {
-  padding: 10px 20px;
-  background-color: white;
-  border: none;
-  border-radius: 20px;
-  margin: 1em;
-  cursor: pointer;
-  -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-  box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
-}
-.btn-submit:hover {
-  background-color: red;
-}
